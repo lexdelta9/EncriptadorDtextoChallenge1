@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+
+    <header>
+
+        <img src="Imagenes/Logo.png" alt="Logo-Alura" class="logo">
+
+    </header>
+
+    <main>
+
+        <div class="contenedor">
+
+            <secttion>
+
+                <textarea class="textarea" name="" id="" cols="30" rows="10" placeholder="Ingrese el texto"></textarea>
+
+                <div>
+                    <h6 class="informacion"> Solo letras minúsculas y sin acento.</h6>
+                </div>
+
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+
+            </secttion>
+    
+            <secttion class="contenedorMensaje">
+                
+                <div class="informacion2">
+
+                    <textarea class="mensaje" name="" id="" cols="20" rows="10"></textarea>
+
+                    <div class="parrafos">
+                        <h3 id="h3">Ningún mensaje fue encontrado</h3>
+                        <p id="p">Ingresa el texto que desees encriptar o desencriptar.</p>
+                        <button class="copiar" id="copiar" onclick="copiarTexto()">copiar y pegar</button>
+                    </div>
+                    
+                </div>
+
+            </secttion>
+
+        </div>
+
+    </main>
+    <footer>
+        <p class="copyright">&copy; Copyright Jose Aguilar 2023</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
